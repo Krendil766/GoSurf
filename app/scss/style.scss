@@ -2,12 +2,13 @@
     @import "libs";
     @import "fonts";
     @import "global";
+
     .header {
         position: relative;
         height: 100vh;
         font-family: 'Fira Sans', sans-serif;
     }
-    
+
     .header__slider {
         &-item {
             height: 100vh;
@@ -18,36 +19,36 @@
             position: relative;
         }
     }
-    
+
     .slider-item__info {
         position: absolute;
         right: 80px;
         bottom: 116px;
         text-align: right;
     }
-    
+
     .slider-item__info-suptitle {
         margin-bottom: 5px;
     }
-    
+
     .slider-item__info-suptext {
         margin-bottom: 8px;
     }
-    
+
     .slider-item__info-title {
         font-weight: 800;
         font-size: 80px;
         line-height: 86px;
         margin-bottom: 48px;
     }
-    
+
     .slider-item__info-text {
         font-weight: 800;
         font-size: 40px;
         line-height: 50px;
         margin-bottom: 15px;
     }
-    
+
     .slider-arrows {
         position: absolute;
         top: 40px;
@@ -55,17 +56,18 @@
         cursor: pointer;
         z-index: 5;
     }
-    
+
     .slider-arrows__left {
         right: 125px;
     }
-    
+
     .slider-dots {
         position: absolute;
         max-width: 920px;
         width: 100%;
         right: 50px;
         bottom: 30px;
+
         .slick-current {
             .dots-box {
                 &:before {
@@ -74,7 +76,7 @@
             }
         }
     }
-    
+
     .dots-box {
         width: 200px;
         height: 28px;
@@ -83,15 +85,18 @@
         align-items: center;
         padding-top: 10px;
         text-transform: capitalize;
+
         &__number {
             font-weight: 800;
             font-size: 24px;
             line-height: 34px;
         }
+
         &__name {
             font-weight: 300;
             line-height: 19px;
         }
+
         &:before {
             content: '';
             background-color: #ffffff;
@@ -100,12 +105,13 @@
             height: 4px;
             top: 0;
         }
+
         /* 	&:hover::before{
 	background-color:#4AF6CD;
 	transition:0.7s linear;
 	} */
     }
-    
+
     .header__title {
         position: absolute;
         top: 0;
@@ -118,7 +124,7 @@
         opacity: 0.07;
         z-index: 5;
     }
-    
+
     .header__aside {
         position: absolute;
         height: 100vh;
@@ -128,12 +134,15 @@
         z-index: 10;
         border-right: 1px solid rgba(#fff, .25);
         text-transform: capitalize;
+
         .menu {
             &__list {
                 padding-top: 70px;
+
                 a {
                     color: #FFFFFF;
                     margin-bottom: 25px;
+
                     span {
                         display: block;
                         font-weight: 500;
@@ -145,14 +154,17 @@
                 }
             }
         }
+
         .header__search {
             margin-bottom: 20px;
             cursor: pointer;
         }
+
         .header__data {
             font-weight: 800;
             font-size: 72px;
             line-height: 64px;
+
             span {
                 display: block;
                 padding-top: 15px;
@@ -164,6 +176,7 @@
                 margin-bottom: 20px;
             }
         }
+
         .header__location {
             display: inline-block;
             position: relative;
@@ -173,6 +186,7 @@
             line-height: 14px;
             letter-spacing: 1.05px;
             padding-left: 19px;
+
             &:before {
                 content: '';
                 position: absolute;
@@ -184,35 +198,36 @@
             }
         }
     }
-    
+
     .header__arrows {
         position: absolute;
         bottom: 25px;
         left: 210px;
         z-index: 15;
     }
-    
+
     .header__map {
         position: absolute;
         right: 0;
         top: 0;
         z-index: 3;
     }
-    
+
     .line-animation {
         stroke-dashoffset: 600;
         stroke-dasharray: 600;
         animation: animdash 2s infinite 4s;
     }
-    
+
     @keyframes animdash {
         to {
             stroke-dashoffset: 0;
             ;
         }
     }
+
     /* Surf */
-    
+
     .serf {
         padding: 157px 0 277px;
         background-image: url('../img/serf-bg.png');
@@ -220,15 +235,96 @@
         background-position: right 218px;
         background-size: auto;
     }
-    
+
     .serf__subtitle {
         text-align: right;
         padding-right: 80px;
         margin-top: -86px;
     }
-    
-    .serf-box {
-        background-image: url();
+
+    .serf-slider {
+        padding-top: 110px;
+
+        .slider-arrows {
+            top: 58px;
+            opacity: 0.25;
+        }
+        .slick-slide:nth-child(4n+1){
+            .serf-box{
+                margin-top: 32px;
+            }
+        }
+        .slick-slide:nth-child(4n+3){
+            .serf-box{
+                margin-top: 89px;
+            }
+        }
+        .slick-current{
+            .serf-box__inner{
+                background: rgba(#1C2121, 0.3);
+                &-btn{
+                    display: block;
+                }
+            }
+        }
     }
-    
+
+    .serf-box {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 400px;
+
+        &__inner {
+            min-height: 750px;
+            background: rgba(#1C2121, 0.85);
+            position: relative;
+            padding-left: 40px;
+            transition: all .5s;
+            &:hover{
+                background: rgba(#1C2121, 0.3);
+                .serf-box__inner-btn{
+                    display: block;
+                }
+            }
+
+            &-title {
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 36px;
+                padding-top: 70px;
+                max-width: 140px;
+            }
+
+            &-location {
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 8px;
+                transform: rotate(-90deg);
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 40px;
+                bottom: 80px;
+                white-space: nowrap;;
+                span{
+                    font-weight: 100;
+                }
+            }
+
+            &-btn {
+                a{
+                    color: #fff;
+                }
+               bottom: 0;
+               position: absolute;
+               left: 0;
+               right: 0;
+               text-align: center;
+               display: none;
+            }
+        }
+
+    }
+
     @import "media";
