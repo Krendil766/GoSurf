@@ -60,7 +60,7 @@ li {
 
 .subtitle {
     display: inline-block;
-    text-align: right;
+    text-align: left;
 
     &__head {
         font-weight: 800;
@@ -72,7 +72,39 @@ li {
         }
     }
 }
+.descr{
+    display: inline-block;
 
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+        padding-right: 10px;
+
+        span {
+            font-weight: 100;
+        }
+    }
+}
+.headline-right {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-right: 103px;
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+    }
+}
 .btn {
     font-weight: 800;
     font-size: 40px;

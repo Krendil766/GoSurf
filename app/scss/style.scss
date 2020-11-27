@@ -511,4 +511,29 @@
         }
     }
 
+
+/* TRAVEL */
+.travel{
+    padding-bottom: 310px;
+    background-image: url('../img/cocktail.png');
+    box-sizing: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    &-slider__subtitle {
+        text-align: right;
+        padding-right: 80px;
+        margin-top: -86px;
+    }
+    &-slider__head{
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+    }
+
+
+}
+
+
+
+
     @import "media"
