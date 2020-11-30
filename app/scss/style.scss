@@ -313,7 +313,6 @@
                 left: 40px;
                 bottom: 80px;
                 white-space: nowrap;
-                ;
 
                 span {
                     font-weight: 100;
@@ -357,7 +356,8 @@
                 border-radius: 6px;
                 top: -225px;
                 left: -126px;
-                &:before{
+
+                &:before {
                     content: '';
                     position: absolute;
                     bottom: -18px;
@@ -393,7 +393,7 @@
                         width: 80px;
                         height: 1px;
                         background-color: $green;
-                        bottom:0;
+                        bottom: 0;
                         left: 0;
                     }
                 }
@@ -401,13 +401,15 @@
                 &-subtitle {
                     line-height: 19px;
                 }
-                &-item{
+
+                &-item {
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
                     align-items: center;
                     text-align: center;
                 }
+
                 &-number {
                     font-weight: 800;
                     line-height: 23px;
@@ -445,9 +447,11 @@
 
         .slider-dots--1 {
             top: 330px;
+
             .slider-dots__content {
                 left: 0;
-                &::before{
+
+                &::before {
                     left: 0;
                 }
             }
@@ -456,6 +460,7 @@
         .slider-dots--2 {
             top: 285px;
             left: -15px;
+
             .slider-dots__circle {
                 position: relative;
 
@@ -501,10 +506,12 @@
         .slider-dots--8 {
             top: 530px;
             left: 25px;
+
             .slider-dots__content {
                 top: -225px;
                 left: -165px;
-                &::before{
+
+                &::before {
                     left: 165px;
                 }
             }
@@ -512,26 +519,93 @@
     }
 
 
-/* TRAVEL */
-.travel{
-    padding-bottom: 310px;
-    background-image: url('../img/cocktail.png');
-    box-sizing: cover;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    &-slider__subtitle {
-        text-align: right;
-        padding-right: 80px;
-        margin-top: -86px;
-    }
-    &-slider__head{
+    /* TRAVEL */
+    .travel {
+        padding-bottom: 310px;
+        background-image: url('../img/cocktail.png');
+        box-sizing: cover;
+        background-position: bottom right;
         background-repeat: no-repeat;
-        background-position: top left;
-        min-height: 780px;
+        position: relative;
+        .slider-arrows{
+            padding-top: 90px;
+            opacity: .3;
+        }
+
+        &-slider__subtitle {
+            text-align: right;
+            margin-top: -86px;
+            padding: 120px 80px 0 0;
+        }
+
+        &-slider__head {
+            background-repeat: no-repeat;
+            background-position: top left;
+            min-height: 780px;
+        }
+
+        &-slider__descr {
+            .descr{min-width: 390px;}
+            padding: 160px 0 117px 132px;
+            margin-top: -230px;
+            min-height: 370px;
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+
+        &-slider__info {
+            padding-left: 132px;
+            display: flex;
+            justify-content: flex-start;
+            height: 245px;
+
+            &-item {
+                display: flex;
+                position: relative;
+                margin-right: 57px;
+            }
+
+            &-subtitle {
+                position: absolute;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 8px;
+                opacity: 0.5;
+                transform: rotate(-90deg);
+                white-space: nowrap;
+                top: 100px;
+                left: -100px;
+                width: 200px;
+                height: 0;
+                text-align: right;
+            }
+
+            &-title {
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 36px;
+                padding-left: 40px;
+                position: relative;
+                span {
+                    position: absolute;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 36px;
+                    letter-spacing: 5.25px;
+                    opacity: 0.75;
+                    top: 24px;
+                    right: 0;
+                }
+            }
+        }
+
+        &-slider__btn {
+            a {
+                color: #fff;
+            }
+            text-align: center;
+        }
     }
-
-
-}
 
 
 

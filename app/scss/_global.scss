@@ -60,7 +60,7 @@ li {
 
 .subtitle {
     display: inline-block;
-    text-align: left;
+    /* text-align: left; */
 
     &__head {
         font-weight: 800;
@@ -76,10 +76,12 @@ li {
     display: inline-block;
 
     &__head {
+        display: flex;
         font-weight: 800;
         font-size: 40px;
-        padding-right: 10px;
-
+        img{
+            padding-left: 20px;
+        }
         span {
             font-weight: 100;
         }
