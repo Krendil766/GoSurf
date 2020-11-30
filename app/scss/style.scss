@@ -519,8 +519,8 @@
     }
 
 
-    /* TRAVEL */
-    .travel {
+    /* Holder */
+    .holder{
         padding-bottom: 310px;
         background-image: url('../img/cocktail.png');
         box-sizing: cover;
@@ -562,7 +562,7 @@
             &-item {
                 display: flex;
                 position: relative;
-                margin-right: 57px;
+                margin-right: 90px;
             }
 
             &-subtitle {
@@ -586,7 +586,8 @@
                 line-height: 36px;
                 padding-left: 40px;
                 position: relative;
-                span {
+                display: flex;
+                .holder-pricing__span {
                     position: absolute;
                     font-weight: 400;
                     font-size: 14px;
