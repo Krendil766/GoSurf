@@ -85,12 +85,10 @@ li {
         .holder__star-list {
             display: flex;
             justify-content: flex-start;
-
             li {
                 margin-right: -25px;
             }
         }
-
         span {
             font-weight: 100;
         }
@@ -196,7 +194,7 @@ input[type=number] {
 
 .quantity {
     input {
-        width: 45px;
+        width: 40px;
         height: 42px;
         line-height: 1.65;
         background: inherit;
@@ -204,7 +202,9 @@ input[type=number] {
         font-weight: 800;
         font-size: 40px;
         line-height: 36px;
-        border:none;
+        border: none;
+        margin-top: -10px;
+
     }
 }
 
@@ -214,35 +214,24 @@ input[type=number] {
 
 .quantity-nav {
     height: 42px;
-    color: #fff;
+    color: $green;
     position: absolute;
     right: -10px;
     top: 40px;
     display: flex;
-}
+    justify-content: space-between;
 
-.quantity-button {
-    position: relative;
-    cursor: pointer;
-    width: 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 13px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
-    line-height: 1.7;
-    transform: translateX(-100%);
-    user-select: none;
 
-    .quantity-up {
-        position: absolute;
-        height: 50%;
-        top: 0;
-        border-bottom: 1px solid #eee;
+    .quantity-button {
+        cursor: pointer;
+        font-size: 20px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+        line-height: 1.7;
+        transform: translateX(-100%);
+        user-select: none;
+        right: 0;
     }
-
-    .quantity-down {
-        position: absolute;
-        bottom: -1px;
-        height: 50%;
+    .quantity-down{
+        margin-right: 16px;
     }
 }

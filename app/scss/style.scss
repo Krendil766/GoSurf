@@ -520,14 +520,21 @@
 
 
     /* Holder */
-    .holder{
+    .holder {
+        &.sleep {
+            background-image: url('../img/sleep_frangipani.png');
+            background-position: right 1180px;
+            ;
+        }
+
         padding-bottom: 310px;
         background-image: url('../img/cocktail.png');
         box-sizing: cover;
         background-position: bottom right;
         background-repeat: no-repeat;
         position: relative;
-        .slider-arrows{
+
+        .slider-arrows {
             padding-top: 90px;
             opacity: .3;
         }
@@ -545,12 +552,19 @@
         }
 
         &-slider__descr {
-            .descr{min-width: 390px;}
+            .descr {
+                min-width: 390px;
+            }
+
             padding: 160px 0 117px 132px;
             margin-top: -230px;
             min-height: 370px;
             background-repeat: no-repeat;
             background-position: top right;
+
+            .descr__head-travel {
+                padding-left: 20px;
+            }
         }
 
         &-slider__info {
@@ -562,7 +576,7 @@
             &-item {
                 display: flex;
                 position: relative;
-                margin-right: 90px;
+                margin-right: 45px;
             }
 
             &-subtitle {
@@ -587,6 +601,7 @@
                 padding-left: 40px;
                 position: relative;
                 display: flex;
+
                 .holder-pricing__span {
                     position: absolute;
                     font-weight: 400;
@@ -604,10 +619,36 @@
             a {
                 color: #fff;
             }
+
             text-align: center;
         }
     }
 
+    /* Holder */
+    .shop {
+        &__slider {
+            padding-left: 132px;
+            &-inner {
+                background-position: center right;
+                background-repeat: no-repeat;
+                display: flex;
+            }
+
+            &-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .shop__extras-inner {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
 
 
 
