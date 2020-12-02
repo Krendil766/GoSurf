@@ -32,6 +32,12 @@ $(function () {
     prevArrow: '<img class = "slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
     nextArrow: '<img class = "slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>',
   });
+  $('.shop__slider').slick({
+    infinite: true,
+    fade: true,
+    prevArrow: '<img class = "slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
+    nextArrow: '<img class = "slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>',
+  })
 
   $('<div class="quantity-nav"><div class="quantity-button quantity-down">-</div><div class="quantity-button quantity-up">+</div></div>').insertAfter('.quantity input');
   $('.quantity').each(function () {
@@ -65,10 +71,16 @@ $(function () {
     });
 
   });
+
   $('.quantity-button').on('click', function () {
     let summ = ($('.guests').val() - 1) * $('.summ').data('guests') + $('.nights').val() * $('.summ').data('nights')
     $('.summ').html("$" + summ);
   });
   let summ = ($('.guests').val() - 1) * $('.summ').data('guests') + $('.nights').val() * $('.summ').data('nights')
     $('.summ').html("$" + summ );
+
+  $('.surfboard-box__circle').on('click',function(){
+    $(this).toggleClass('active')
+    console.log('+');
+  })
 });
