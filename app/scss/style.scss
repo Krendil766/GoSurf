@@ -125,6 +125,19 @@
         z-index: 5;
     }
 
+    .menu-btn{
+        position: absolute;
+        width: 40px;
+        top: 60px;
+        right: 20px;
+        z-index: 15;
+        cursor: pointer;
+        &__line{
+            height: 3px;
+            background-color: $green;
+            margin-bottom: 5px;
+        }
+    }
     .header__aside {
         position: absolute;
         height: 100vh;
@@ -835,7 +848,7 @@
                 padding: 18px 14px;
 
                 &::after {
-                   display: none;
+                    display: none;
                 }
             }
         }
