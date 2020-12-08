@@ -127,6 +127,7 @@
 
     .menu-btn{
         position: absolute;
+        display: none;
         width: 40px;
         top: 60px;
         right: 20px;
@@ -287,10 +288,12 @@
     }
 
     .serf-box {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 400px;
+        &__wrapper{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 400px;
+        }
 
         &__inner {
             min-height: 750px;
@@ -441,6 +444,7 @@
 
         .slick-list {
             min-height: 635px;
+            overflow: visible;
         }
 
         .slider-dots__circle {

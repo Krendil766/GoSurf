@@ -11,6 +11,12 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: '.header__slider',
+    responsive: [
+      {
+        breakpoint: 530,
+        settings: "unslick",
+      },
+    ]
   });
   $('.serf-slider').slick({
     slidesToShow: 4,
@@ -18,6 +24,33 @@ $(function () {
     prevArrow: '<img class = "slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
     nextArrow: '<img class = "slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>',
     asNavFor: '.slider-map',
+    responsive: [
+      {
+        breakpoint: 1040,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
   $('.slider-map').slick({
     slidesToShow: 8,
@@ -25,6 +58,34 @@ $(function () {
     arrows: false,
     asNavFor: '.serf-slider',
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1040,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
   $('.holder__slider').slick({
     infinite: true,
