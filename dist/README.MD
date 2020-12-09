@@ -1,1 +1,1 @@
-# [GoSurf](https://Krendil766/github.io/GoSurf)
+# [GoSurf](https://Krendil766.github.io/GoSurf)
