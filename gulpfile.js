@@ -5,7 +5,7 @@ let gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     del = require('del');
-    /* autoprefixer = require('gulp-autoprefixer'); */
+/* autoprefixer = require('gulp-autoprefixer'); */
 
 
 gulp.task('clean', async function() {
@@ -63,7 +63,7 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('export', function() {
+gulp.task('export', async function() {
     let buildHtml = gulp.src('app/**/*.html')
         .pipe(gulp.dest('dist'));
 
