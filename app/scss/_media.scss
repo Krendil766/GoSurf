@@ -43,7 +43,7 @@
 
 	.serf {
 		.title {
-			span {
+			div {
 				font-size: 170px;
 			}
 		}
@@ -228,6 +228,7 @@
 
 	.shop {
 		margin-bottom: 50px;
+
 		&__slider {
 			padding-left: 20px;
 		}
@@ -245,7 +246,8 @@
 
 			.shop__slider-content {
 				justify-content: center;
-				.surfboard{
+
+				.surfboard {
 					margin-right: 15px;
 				}
 			}
@@ -502,15 +504,14 @@
 	.holder,
 	.shop {
 		.title {
-			span {
+			div {
 				font-size: 80px;
 				padding-bottom: 20px;
+			}
 
-				h3 {
-					font-size: 72px;
-					right: -30px;
-
-				}
+			h3 {
+				font-size: 72px;
+				right: -30px;
 			}
 		}
 	}
@@ -559,6 +560,7 @@
 				}
 			}
 		}
+
 		.shop__slider-content {
 			flex-direction: column;
 			align-items: flex-start;
@@ -677,13 +679,13 @@
 
 	.serf {
 		.title {
-			span {
+			div {
 				font-size: 100px;
 				padding-bottom: 80px;
+			}
 
-				h3 {
-					font-size: 72px;
-				}
+			h3 {
+				font-size: 72px;
 			}
 		}
 	}
@@ -696,14 +698,15 @@
 
 	.shop {
 		.surfboard-box__content {
-			padding-left:0;
+			padding-left: 0;
 			top: 20px;
 
 			&:before {
 				display: none;
 			}
 		}
-		.shop__slider-inner .surfboard__position--3 .surfboard-box__content{
+
+		.shop__slider-inner .surfboard__position--3 .surfboard-box__content {
 			left: 0;
 			padding: 0;
 			top: 20px;
@@ -756,29 +759,36 @@
 			}
 		}
 	}
+
 	.shop {
 		.shop__slider-inner {
-			.shop__slider-content{
+			.shop__slider-content {
 				align-items: center;
-					.shop__extras-inner{
+
+				.shop__extras-inner {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+
+					.shop__extras-box {
 						display: flex;
 						flex-direction: column;
-						justify-content: center;
 						align-items: center;
-						.shop__extras-box{
-							display: flex;
-							flex-direction: column;
-							align-items: center;
-							justify-content: center;
-							&:last-child{
-								margin-left: 0;
-							}
+						justify-content: center;
+
+						&:last-child {
+							margin-left: 0;
 						}
 					}
+				}
 			}
-			.surfboard__position--1 .surfboard-box__content{
+
+			.surfboard__position--1 .surfboard-box__content {
 				left: -100px
-		};
+			}
+
+			;
 
 		}
 	}
