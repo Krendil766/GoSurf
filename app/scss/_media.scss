@@ -225,6 +225,44 @@
 			background-position: right top;
 		}
 	}
+
+	.shop {
+		margin-bottom: 50px;
+		&__slider {
+			padding-left: 20px;
+		}
+
+		.shop__slider-inner {
+			display: block;
+
+			.surfboard {
+				margin-bottom: 35px;
+			}
+
+			.shop__slider-info {
+				margin-bottom: 45px;
+			}
+
+			.shop__slider-content {
+				justify-content: center;
+				.surfboard{
+					margin-right: 15px;
+				}
+			}
+
+			.surfboard__position--3 {
+				.surfboard-box__content {
+					padding: 0 0 0 102px;
+					left: 33px;
+					top: -22px;
+
+					&:before {
+						left: 0;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media(max-width: 1040px) {
@@ -460,7 +498,9 @@
 }
 
 @media(max-width: 720px) {
-	.holder, .shop {
+
+	.holder,
+	.shop {
 		.title {
 			span {
 				font-size: 80px;
@@ -485,6 +525,43 @@
 	.sleep {
 		.holder-slider__descr {
 			background-image: none !important;
+		}
+	}
+
+	.holder {
+		&.sleep {
+			background-position: right bottom;
+		}
+	}
+}
+
+@media(max-width: 610px) {
+	.shop {
+		&__slider-content {
+			.surfboard {
+				margin-right: 0;
+			}
+
+			.surfboard__position--1 {}
+
+			.surfboard-box {
+				min-width: 235px;
+			}
+
+			.surfboard-box__content {
+				padding-left: 85px;
+				font-size: 16px;
+				width: 100%;
+				top: -22px;
+
+				&:before {
+					width: 50px;
+				}
+			}
+		}
+		.shop__slider-content {
+			flex-direction: column;
+			align-items: flex-start;
 		}
 	}
 }
@@ -616,6 +693,22 @@
 			background-position: right -40px;
 		}
 	}
+
+	.shop {
+		.surfboard-box__content {
+			padding-left:0;
+			top: 20px;
+
+			&:before {
+				display: none;
+			}
+		}
+		.shop__slider-inner .surfboard__position--3 .surfboard-box__content{
+			left: 0;
+			padding: 0;
+			top: 20px;
+		}
+	}
 }
 
 @media(max-width: 425px) {
@@ -638,13 +731,55 @@
 		padding: 16px;
 		margin-left: 35px;
 	}
-	.holder{
-		&__star-list{
+
+	.holder {
+		background-image: none;
+
+		&__star-list {
 			margin-left: -14px;
-			li{
+
+			li {
 				width: 50px;
 				height: 50px;
 			}
+		}
+
+		.descr__head {
+			.descr__head-travel {
+				display: none;
+			}
+		}
+
+		&.sleep {
+			.slider-arrows {
+				top: 50px;
+			}
+		}
+	}
+	.shop {
+		.shop__slider-inner {
+			.shop__slider-content{
+				align-items: center;
+					.shop__extras-inner{
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						.shop__extras-box{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							&:last-child{
+								margin-left: 0;
+							}
+						}
+					}
+			}
+			.surfboard__position--1 .surfboard-box__content{
+				left: -100px
+		};
+
 		}
 	}
 }
